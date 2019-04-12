@@ -1,0 +1,169 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e685dc58-a2e5-48f7-97d7-4a562efff4b1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Test</ID>
+  <Name>Test</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Test</DataSourceID>
+  <Schema>
+    <xs:schema id="Test" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Test" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6e22483c-7260-456a-89c3-04f69cd63767">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_area" msprop:design-time-name="df7709d7-1d9a-4175-a9c8-15699ffe5f9b" msprop:DbTableName="Dim_area" msprop:FriendlyName="Dim_area" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="area_ID" msprop:design-time-name="5cb0f179-9dc9-4a77-ab5f-5f778cdc03b5" msprop:DbColumnName="area_ID" msprop:FriendlyName="area_ID" type="xs:int" />
+                  <xs:element name="area_name" msprop:design-time-name="f4172fd6-2506-475b-a568-845e3946865a" msprop:DbColumnName="area_name" msprop:FriendlyName="area_name" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_county" msprop:design-time-name="a87c931f-fb2e-4328-9fae-d74aeb61469e" msprop:DbTableName="Dim_county" msprop:FriendlyName="Dim_county" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="county_ID" msprop:design-time-name="e7be9d2a-98a9-4118-9eef-9423a4a63d92" msprop:DbColumnName="county_ID" msprop:FriendlyName="county_ID" type="xs:int" />
+                  <xs:element name="county_name" msprop:design-time-name="e1a62e1e-4a09-42ea-a1dc-25546418b981" msprop:DbColumnName="county_name" msprop:FriendlyName="county_name" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_location" msprop:design-time-name="ba207e52-f584-4b72-818d-e0c4687b65a8" msprop:DbTableName="Dim_location" msprop:FriendlyName="Dim_location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="location_id" msprop:design-time-name="cbfe987a-ab02-4174-9b7d-d516f73e715a" msprop:DbColumnName="location_id" msprop:FriendlyName="location_id" type="xs:int" />
+                  <xs:element name="location_name" msprop:design-time-name="29c2d5e6-1962-4d77-bf2e-98ae966ca48d" msprop:DbColumnName="location_name" msprop:FriendlyName="location_name" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_typ" msprop:design-time-name="f1ccb5d8-d47e-4519-b643-b8978eed2434" msprop:DbTableName="Dim_typ" msprop:FriendlyName="Dim_typ" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="typ_ID" msprop:design-time-name="961b100f-729c-41cf-8ec2-e9079fa9ae28" msprop:DbColumnName="typ_ID" msprop:FriendlyName="typ_ID" type="xs:int" />
+                  <xs:element name="typ_name" msprop:design-time-name="11905205-a9e2-43e6-91ab-b3a006db6cf7" msprop:DbColumnName="typ_name" msprop:FriendlyName="typ_name" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_fact" msprop:design-time-name="d914cf09-9159-481f-9472-03eb73f91a20" msprop:DbTableName="fact" msprop:FriendlyName="fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="location_ID" msprop:design-time-name="a8dabcdc-43ef-4425-815d-23d62ed1ad88" msprop:DbColumnName="location_ID" msprop:FriendlyName="location_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="area_ID" msprop:design-time-name="8969b52d-ae08-474a-895f-05f744c4d55e" msprop:DbColumnName="area_ID" msprop:FriendlyName="area_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="county_ID" msprop:design-time-name="4addc5b8-2330-4690-839c-19142d6722d8" msprop:DbColumnName="county_ID" msprop:FriendlyName="county_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="year_ID" msprop:design-time-name="669f211e-c2da-4ef1-8b2d-c9cd9c45fd56" msprop:DbColumnName="year_ID" msprop:FriendlyName="year_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="typ_ID" msprop:design-time-name="a520be26-cdb7-4fb6-8ff3-547ccdaab576" msprop:DbColumnName="typ_ID" msprop:FriendlyName="typ_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="prices" msprop:design-time-name="219e681f-5ee0-4dde-bea1-2d034d35d0c2" msprop:DbColumnName="prices" msprop:FriendlyName="prices" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="dublin_allresidential" msprop:design-time-name="cf5c77dc-fd01-40d4-9d58-56bcef54a0d4" msprop:DbColumnName="dublin_allresidential" msprop:FriendlyName="dublin_allresidential" type="xs:double" minOccurs="0" />
+                  <xs:element name="dublin_houses" msprop:design-time-name="a59706f9-d182-495c-be7b-2e9912a8656d" msprop:DbColumnName="dublin_houses" msprop:FriendlyName="dublin_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="dublin_apartments" msprop:design-time-name="9c764029-ba1c-4ffb-a426-6d821fb5fa3f" msprop:DbColumnName="dublin_apartments" msprop:FriendlyName="dublin_apartments" type="xs:double" minOccurs="0" />
+                  <xs:element name="dublincity_houses" msprop:design-time-name="13756af6-1aec-4b59-9239-563ca658b598" msprop:DbColumnName="dublincity_houses" msprop:FriendlyName="dublincity_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="dunlaogharie_houses" msprop:design-time-name="04e681d6-347a-43b7-9f3e-d8f7b8fab62b" msprop:DbColumnName="dunlaogharie_houses" msprop:FriendlyName="dunlaogharie_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="fingal_houses" msprop:design-time-name="a0006e98-50a2-4c39-8b13-7672b707cf45" msprop:DbColumnName="fingal_houses" msprop:FriendlyName="fingal_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="southdublin_houses" msprop:design-time-name="8435a64b-1d9b-430f-9514-4da819088d6c" msprop:DbColumnName="southdublin_houses" msprop:FriendlyName="southdublin_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="housepriceindex" msprop:design-time-name="64558b61-be54-4854-ab39-23d96cd0f866" msprop:DbColumnName="housepriceindex" msprop:FriendlyName="housepriceindex" type="xs:double" minOccurs="0" />
+                  <xs:element name="apr_ID" msprop:design-time-name="8b9638f3-488c-451d-9c43-bec8440f0d41" msprop:DbColumnName="apr_ID" msprop:FriendlyName="apr_ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_priceindex" msprop:design-time-name="5199aa18-3eb6-43b0-9373-3423fe539cb3" msprop:DbTableName="Dim_priceindex" msprop:FriendlyName="Dim_priceindex" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="year_ID" msprop:design-time-name="e4539181-438b-47bf-b09f-33768023c1d0" msprop:DbColumnName="year_ID" msprop:FriendlyName="year_ID" type="xs:int" />
+                  <xs:element name="year_name" msprop:design-time-name="c8dac21d-3efc-4dee-b043-a32ecf61dbea" msprop:DbColumnName="year_name" msprop:FriendlyName="year_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="dublin_allresidential" msprop:design-time-name="b0b78197-3ebe-4baa-9dee-676f5cfd3257" msprop:DbColumnName="dublin_allresidential" msprop:FriendlyName="dublin_allresidential" type="xs:double" minOccurs="0" />
+                  <xs:element name="dublin_houses" msprop:design-time-name="c0144766-80ab-4da8-aadf-4505cab00f22" msprop:DbColumnName="dublin_houses" msprop:FriendlyName="dublin_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="dublin_apartments" msprop:design-time-name="c1dd0867-b7b9-4ace-ac05-9a56fc96c51e" msprop:DbColumnName="dublin_apartments" msprop:FriendlyName="dublin_apartments" type="xs:double" minOccurs="0" />
+                  <xs:element name="dublincity_houses" msprop:design-time-name="6c300115-7f30-499a-997a-e62b562f100d" msprop:DbColumnName="dublincity_houses" msprop:FriendlyName="dublincity_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="dunlaogharie_houses" msprop:design-time-name="f89f4335-3489-4c61-94b6-d4205361c9b0" msprop:DbColumnName="dunlaogharie_houses" msprop:FriendlyName="dunlaogharie_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="fingal_houses" msprop:design-time-name="7ba5d2a0-4393-4b48-9b4b-e269e11d0e2d" msprop:DbColumnName="fingal_houses" msprop:FriendlyName="fingal_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="southdublin_houses" msprop:design-time-name="4c9e0feb-30ad-480b-8d26-b615ce088ec0" msprop:DbColumnName="southdublin_houses" msprop:FriendlyName="southdublin_houses" type="xs:double" minOccurs="0" />
+                  <xs:element name="housepriceindex" msprop:design-time-name="0f84b4ec-d836-4c01-81b2-64f32c1abe3b" msprop:DbColumnName="housepriceindex" msprop:FriendlyName="housepriceindex" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_area" />
+          <xs:field xpath="area_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_county_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_county" />
+          <xs:field xpath="county_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_location" />
+          <xs:field xpath="location_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_typ_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_typ" />
+          <xs:field xpath="typ_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_priceindex_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_priceindex" />
+          <xs:field xpath="year_ID" />
+        </xs:unique>
+        <xs:keyref name="FK_fact_Dim_priceindex" refer="dbo_Dim_priceindex_Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="year_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Dim_area" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="area_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Dim_county" refer="dbo_Dim_county_Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="county_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Dim_location" refer="dbo_Dim_location_Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="location_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Dim_typ" refer="dbo_Dim_typ_Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="typ_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Test xmlns="" />
+  </Schema>
+</DataSourceView>
